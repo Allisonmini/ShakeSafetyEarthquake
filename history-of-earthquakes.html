@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History of Major Earthquakes - Shake Safety</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="history.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Padauk&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><span class="shake">Shake</span> Safety</div>
+            <ul class="nav-links">
+                <li><a href="index.html" data-translate="home">Home</a></li>
+                <li class="dropdown">
+                    <a href="menu.html" data-translate="menu">Menu</a>
+                    <ul class="dropdown-content">
+                        <li><a href="what-is-earthquake.html" data-translate="what-is-earthquake">What is an Earthquake?</a></li>
+                        <li><a href="types-of-earthquakes.html" data-translate="types-of-earthquakes">Types of Earthquakes</a></li>
+                        <li><a href="history-of-earthquakes.html" data-translate="history">History of Major Earthquakes</a></li>
+                        <li><a href="#community" data-translate="safety-tips">Safety Tips & Preparations</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#preparations" data-translate="preparations">Preparations</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#before" data-translate="before">Before</a></li>
+                        <li><a href="#during" data-translate="during">During</a></li>
+                        <li><a href="#after" data-translate="after">After</a></li>
+                    </ul>
+                </li>
+                <li><a href="#shake-finder" data-translate="shake-finder">Shake Finder</a></li>
+                <li class="language-selector">
+                    <div class="language-tabs">
+                        <button class="lang-tab active" onclick="changeLanguage('en')">English</button>
+                        <button class="lang-tab" onclick="changeLanguage('my')">မြန်မာ</button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="history-of-earthquakes" class="earthquake-section">
+            <div class="content-wrapper">
+                <h2 data-translate="history-title">History of Major Earthquakes</h2>
+                <p data-translate="history-intro">Throughout history, major earthquakes have shaped our understanding of these powerful natural phenomena. Here are some of the most significant earthquakes that have occurred around the world.</p>
+
+                <div class="card-stack-container">
+                    <button class="nav-button prev-button" onclick="previousCard()">❮</button>
+                    <div class="card-stack">
+                        <!-- Tohoku Earthquake -->
+                        <div class="earthquake-card" style="transform: translateZ(0px)">
+                            <img src="Assets/Tohoku2-bloc_diagramme_japan_earthquakes_940_545_2.jpg" alt="Tohoku Earthquake" class="card-image">
+                            <div class="card-content">
+                                <div class="card-info">
+                                    <div class="magnitude">M9.0</div>
+                                    <div class="year">2011</div>
+                                </div>
+                                <h3 class="card-title" data-translate="tohoku-title">Tohoku Earthquake</h3>
+                                <p class="card-details" data-translate="tohoku-location" style="color: #000000;">Japan</p>
+                                <p class="card-description" data-translate="tohoku-description" style="color: #000000;">The most powerful earthquake ever recorded in Japan, triggering a devastating tsunami that caused the Fukushima nuclear disaster.</p>
+                            </div>
+                        </div>
+
+                        <!-- Sumatra Earthquake -->
+                        <div class="earthquake-card" style="transform: translateZ(-1px)">
+                            <img src="Assets/2004_Indian_Ocean_earthquake_-_affected_countries.png" alt="Sumatra Earthquake" class="card-image">
+                            <div class="card-content">
+                                <div class="card-info">
+                                    <div class="magnitude">M9.1</div>
+                                    <div class="year">2004</div>
+                                </div>
+                                <h3 class="card-title" data-translate="sumatra-title">Sumatra Earthquake</h3>
+                                <p class="card-details" data-translate="sumatra-location" style="color: #000000;">Indonesia</p>
+                                <p class="card-description" data-translate="sumatra-description" style="color: #000000;">One of the deadliest natural disasters in recorded history, causing a massive tsunami that affected 14 countries.</p>
+                            </div>
+                        </div>
+
+                        <!-- Haiti Earthquake -->
+                        <div class="earthquake-card" style="transform: translateZ(-2px)">
+                            <img src="Assets/Haiti_Earthquake_v02_0.jpg.avif" alt="Haiti Earthquake" class="card-image">
+                            <div class="card-content">
+                                <div class="card-info">
+                                    <div class="magnitude">M7.0</div>
+                                    <div class="year">2010</div>
+                                </div>
+                                <h3 class="card-title" data-translate="haiti-title" >Haiti Earthquake</h3>
+                                <p class="card-details" data-translate="haiti-location"style="color: #000000;">Haiti</p>
+                                <p class="card-description" data-translate="haiti-description" style="color: #000000;">A devastating earthquake that caused massive destruction in Port-au-Prince and surrounding areas.</p>
+                            </div>
+                        </div>
+
+                        <!-- Nepal Earthquake -->
+                        <div class="earthquake-card" style="transform: translateZ(-3px)">
+                            <img src="Assets/nepal_map_0.jpg" alt="Nepal Earthquake" class="card-image">
+                            <div class="card-content">
+                                <div class="card-info">
+                                    <div class="magnitude">M7.8</div>
+                                    <div class="year">2015</div>
+                                </div>
+                                <h3 class="card-title" data-translate="nepal-title">Nepal Earthquake</h3>
+                                <p class="card-details" data-translate="nepal-location" style="color: #000000;">Nepal</p>
+                                <p class="card-description" data-translate="nepal-description" style="color: #000000;">A major earthquake that caused widespread damage in Nepal and triggered avalanches on Mount Everest.</p>
+                            </div>
+                        </div>
+
+                        <!-- Chile Earthquake -->
+                        <div class="earthquake-card" style="transform: translateZ(-4px)">
+                            <img src="Assets/chile-earthquake-map.png" alt="Chile Earthquake" class="card-image">
+                            <div class="card-content">
+                                <div class="card-info">
+                                    <div class="magnitude">M8.8</div>
+                                    <div class="year">2010</div>
+                                </div>
+                                <h3 class="card-title" data-translate="chile-title">Chile Earthquake</h3>
+                                <p class="card-details" data-translate="chile-location" style="color: #000000;">Chile</p>
+                                <p class="card-description" data-translate="chile-description" style="color: #000000;">One of the strongest earthquakes ever recorded, causing significant damage and triggering a tsunami.</p>
+                            </div>
+                        </div>
+
+                        <!-- Sichuan Earthquake -->
+                        <div class="earthquake-card" style="transform: translateZ(-5px)">
+                            <img src="Assets/Map-Sichuan-province-shaking-China-intensity-earthquake-May-12-2008.jpg.webp" alt="Sichuan Earthquake" class="card-image">
+                            <div class="card-content">
+                                <div class="card-info">
+                                    <div class="magnitude">M7.9</div>
+                                    <div class="year">2008</div>
+                                </div>
+                                <h3 class="card-title" data-translate="sichuan-title">Sichuan Earthquake</h3>
+                                <p class="card-details" data-translate="sichuan-location" style="color: #000000;">China</p>
+                                <p class="card-description" data-translate="sichuan-description" style="color: #000000;">A devastating earthquake that caused massive destruction in Sichuan province and surrounding areas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="nav-button next-button" onclick="nextCard()">❯</button>
+                    <div class="card-counter">1/6</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="translations.js"></script>
+    <script>
+        let currentCardIndex = 0;
+        const cards = document.querySelectorAll('.earthquake-card');
+        const cardCounter = document.querySelector('.card-counter');
+        const cardStack = document.querySelector('.card-stack');
+
+        function updateCardStack() {
+            cards.forEach((card, index) => {
+                if (index === currentCardIndex) {
+                    card.style.transform = 'translateX(0)';
+                    card.style.zIndex = '1';
+                    card.style.opacity = '1';
+                } else if (index < currentCardIndex) {
+                    card.style.transform = 'translateX(-100%)';
+                    card.style.zIndex = '0';
+                    card.style.opacity = '0';
+                } else {
+                    card.style.transform = 'translateX(100%)';
+                    card.style.zIndex = '0';
+                    card.style.opacity = '0';
+                }
+            });
+            
+            cardCounter.textContent = `${currentCardIndex + 1}/${cards.length}`;
+        }
+
+        function nextCard() {
+            if (currentCardIndex < cards.length - 1) {
+                currentCardIndex++;
+                updateCardStack();
+            }
+        }
+
+        function previousCard() {
+            if (currentCardIndex > 0) {
+                currentCardIndex--;
+                updateCardStack();
+            }
+        }
+
+        // Initialize card stack
+        updateCardStack();
+
+        // Add touch and drag functionality
+        let isDragging = false;
+        let startX;
+        let currentX;
+
+        cardStack.addEventListener('mousedown', startDrag);
+        cardStack.addEventListener('touchstart', startDrag);
+        document.addEventListener('mousemove', drag);
+        document.addEventListener('touchmove', drag);
+        document.addEventListener('mouseup', endDrag);
+        document.addEventListener('touchend', endDrag);
+
+        function startDrag(e) {
+            isDragging = true;
+            startX = e.type === 'mousedown' ? e.clientX : e.touches[0].clientX;
+            currentX = startX;
+        }
+
+        function drag(e) {
+            if (!isDragging) return;
+            e.preventDefault();
+            currentX = e.type === 'mousemove' ? e.clientX : e.touches[0].clientX;
+            const diff = currentX - startX;
+            
+            if (Math.abs(diff) > 50) {
+                if (diff > 0 && currentCardIndex > 0) {
+                    previousCard();
+                    isDragging = false;
+                } else if (diff < 0 && currentCardIndex < cards.length - 1) {
+                    nextCard();
+                    isDragging = false;
+                }
+            }
+        }
+
+        function endDrag() {
+            isDragging = false;
+        }
+    </script>
+</body>
+</html> 

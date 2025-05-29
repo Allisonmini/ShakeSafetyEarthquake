@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of Earthquakes - Shake Safety</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Padauk&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><span class="shake">Shake</span> Safety</div>
+            <ul class="nav-links">
+                <li><a href="index.html" data-translate="home">Home</a></li>
+                <li class="dropdown">
+                    <a href="menu.html" data-translate="menu">Menu</a>
+                    <ul class="dropdown-content">
+                        <li><a href="what-is-earthquake.html" data-translate="what-is-earthquake">What is an Earthquake?</a></li>
+                        <li><a href="types-of-earthquakes.html" data-translate="types-of-earthquakes">Types of Earthquakes</a></li>
+                        <li><a href="history-of-earthquakes.html" data-translate="history">History of Major Earthquakes</a></li>
+                        <li><a href="#community" data-translate="safety-tips">Safety Tips & Preparations</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#preparations" data-translate="preparations">Preparations</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#before" data-translate="before">Before</a></li>
+                        <li><a href="#during" data-translate="during">During</a></li>
+                        <li><a href="#after" data-translate="after">After</a></li>
+                    </ul>
+                </li>
+                <li><a href="#shake-finder" data-translate="shake-finder">Shake Finder</a></li>
+                <li class="language-selector">
+                    <div class="language-tabs">
+                        <button class="lang-tab active" onclick="changeLanguage('en')">English</button>
+                        <button class="lang-tab" onclick="changeLanguage('my')">မြန်မာ</button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="types-of-earthquakes" class="earthquake-section">
+            <div class="content-wrapper">
+                <h2 data-translate="types-of-earthquakes">Types of Earthquakes</h2>
+                <p data-translate="types-intro">Earthquakes are one of the most powerful natural forces on Earth, capable of reshaping landscapes, destroying cities, and changing lives in just moments. While many people think of earthquakes as sudden and mysterious, they are actually the result of specific physical processes happening deep beneath the Earth's surface.</p>
+
+                <p data-translate="types-intro-2">The most common cause of earthquakes is tectonic activity, where massive slabs of Earth's crust (called tectonic plates) move, collide, or slide past one another. However, not all earthquakes are caused by tectonic forces. In fact, there are several distinct types of earthquakes, each triggered by different natural or human-induced processes. These include the movement of magma beneath volcanoes, the collapse of underground caves, and even explosions from nuclear tests or industrial activities.</p>
+
+                <p data-translate="types-intro-3">Understanding the different types of earthquakes is crucial for scientists, engineers, and the general public. Each type can vary in intensity, location, warning signs, and potential damage. By learning about the causes and characteristics of these earthquakes, we can better prepare for them and reduce their impact on human life and the environment.</p>
+
+                <p data-translate="types-intro-4">In the sections below, we'll explore the main categories of earthquakes in detail — from the powerful tectonic quakes that shake entire regions to the subtle tremors triggered by human activity. Each type is explained with real-world examples to help you visualize where and how they occur.</p>
+            </div>
+        </section>
+
+        <section id="tectonic-earthquakes" class="earthquake-section">
+            <div class="content-wrapper">
+                <div class="right-content">
+                    <h2 data-translate="tectonic-title">Tectonic Earthquakes</h2>
+                    <p data-translate="tectonic-definition">Tectonic earthquakes are the most common type, occurring when the Earth's tectonic plates move and interact with each other. These earthquakes can be further classified based on the type of plate boundary where they occur.</p>
+                    
+                    <h3 data-translate="convergent-title">Convergent Boundary Earthquakes</h3>
+                    <p data-translate="convergent-definition">These occur where plates collide, often creating mountain ranges and deep ocean trenches. The 2011 Tohoku earthquake in Japan is a famous example, which also triggered a devastating tsunami.</p>
+
+                    <h3 data-translate="divergent-title">Divergent Boundary Earthquakes</h3>
+                    <p data-translate="divergent-definition">These happen where plates move apart, typically along mid-ocean ridges. While these earthquakes are usually less powerful, they can still cause significant damage to nearby structures.</p>
+
+                    <h3 data-translate="transform-title">Transform Boundary Earthquakes</h3>
+                    <p data-translate="transform-definition">These occur where plates slide past each other horizontally. The San Andreas Fault in California is a well-known example of a transform boundary, responsible for many significant earthquakes.</p>
+
+                    <div class="image-container">
+                        <img src="Assets/BOT_PlateBoundaries.png" alt="Plate Boundaries" class="boundary-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="volcanic-earthquakes" class="earthquake-section">
+            <div class="content-wrapper">
+                <div class="right-content">
+                    <h2 data-translate="volcanic-title">Volcanic Earthquakes</h2>
+                    <p data-translate="volcanic-definition">Volcanic earthquakes are associated with volcanic activity and magma movement. They can serve as warning signs of potential volcanic eruptions.</p>
+                    <div class="image-container">
+                        <img src="Assets/volcanicEQ.png" alt="Volcanic Earthquake" class="volcanic-image">
+                    </div>
+                    <p data-translate="volcanic-types">There are two main types of volcanic earthquakes:</p>
+                    <ul>
+                        <li data-translate="volcanic-long-period">Long-period earthquakes: Caused by magma movement and pressure changes in the volcano</li>
+                        <li data-translate="volcanic-harmonic">Harmonic tremors: Continuous, low-frequency vibrations indicating magma movement</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="induced-earthquakes" class="earthquake-section">
+            <div class="content-wrapper">
+                <div class="right-content">
+                    <h2 data-translate="induced-title">Induced Earthquakes</h2>
+                    <p data-translate="induced-definition">These are earthquakes caused by human activities, such as:</p>
+                    <ul>
+                        <li data-translate="induced-mining">Mining operations that remove large amounts of material</li>
+                        <li data-translate="induced-reservoir">Reservoir-induced seismicity from large dams</li>
+                        <li data-translate="induced-fracking">Hydraulic fracturing (fracking) for oil and gas extraction</li>
+                        <li data-translate="induced-wastewater">Wastewater injection from oil and gas operations</li>
+                    </ul>
+                    <div class="image-container">
+                        <img src="Assets/inducedEq.png" alt="Induced Earthquake" class="induced-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="earthquake-forces" class="earthquake-section">
+            <div class="content-wrapper">
+                <div class="right-content">
+                    <h2 data-translate="forces-title">Earthquake Forces</h2>
+                    <p data-translate="forces-intro">Earthquakes generate different types of forces that affect structures and the ground:</p>
+                    
+                    <h3 data-translate="primary-forces">Primary (P) Waves</h3>
+                    <p data-translate="primary-definition">The fastest seismic waves that compress and expand the ground in the direction of wave travel. They can travel through both solid and liquid materials.</p>
+                    
+                    <h3 data-translate="secondary-forces">Secondary (S) Waves</h3>
+                    <p data-translate="secondary-definition">Slower than P waves, these waves move the ground up and down or side to side. They can only travel through solid materials.</p>
+                    
+                    <h3 data-translate="surface-forces">Surface Waves</h3>
+                    <p data-translate="surface-definition">The slowest but most destructive waves that travel along the Earth's surface. They cause the most damage to buildings and structures.</p>
+                    
+                    <div class="image-container">
+                        <img src="Assets/Diagram-waves-types-Rayleigh-Love.jpg.webp" alt="Seismic Waves" class="waves-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="resources-section">
+            <h2 data-translate="helpful-resources">Helpful Resources to Learn More</h2>
+            <div class="resources-list">
+                <ul>
+                    <li><a href="https://www.usgs.gov/natural-hazards/earthquake-hazards/science/types-earthquakes" target="_blank" data-translate="usgs-types-link">USGS Types of Earthquakes</a></li>
+                    <li><a href="https://www.britannica.com/science/earthquake-geology" target="_blank" data-translate="britannica-link">Britannica Earthquake Types</a></li>
+                    <li><a href="https://www.iris.edu/hq/inclass/animation/earthquake_focus_and_epicenter" target="_blank" data-translate="iris-link">IRIS Earthquake Animations</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

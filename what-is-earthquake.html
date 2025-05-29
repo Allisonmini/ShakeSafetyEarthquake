@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is an Earthquake? - Shake Safety</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Padauk&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><span class="shake">Shake</span> Safety</div>
+            <ul class="nav-links">
+                <li><a href="index.html" data-translate="home">Home</a></li>
+                <li class="dropdown">
+                    <a href="menu.html" data-translate="menu">Menu</a>
+                    <ul class="dropdown-content">
+                        <li><a href="what-is-earthquake.html" data-translate="what-is-earthquake">What is an Earthquake?</a></li>
+                        <li><a href="types-of-earthquakes.html" data-translate="types-of-earthquakes">Types of Earthquakes</a></li>
+                        <li><a href="history-of-earthquakes.html" data-translate="history">History of Major Earthquakes</a></li>
+                        <li><a href="#community" data-translate="safety-tips">Safety Tips & Preparations</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#preparations" data-translate="preparations">Preparations</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#before" data-translate="before">Before</a></li>
+                        <li><a href="#during" data-translate="during">During</a></li>
+                        <li><a href="#after" data-translate="after">After</a></li>
+                    </ul>
+                </li>
+                <li><a href="#shake-finder" data-translate="shake-finder">Shake Finder</a></li>
+                <li class="language-selector">
+                    <div class="language-tabs">
+                        <button class="lang-tab active" onclick="changeLanguage('en')">English</button>
+                        <button class="lang-tab" onclick="changeLanguage('my')">မြန်မာ</button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="what-is-earthquake" class="earthquake-section">
+            <div class="content-wrapper">
+                <h2 data-translate="what-is-earthquake">What is an Earthquake?</h2>
+                <p data-translate="earthquake-definition">An earthquake is the sudden, rapid shaking of the ground caused by the movement of the Earth's outer layer — the crust. This shaking happens when built-up energy inside the Earth is suddenly released. Earthquakes can be minor, where you may feel only a slight tremor, or they can be massive, leading to serious destruction, collapsing buildings, broken roads, fires, landslides, or even tsunamis in coastal areas.</p>
+                <p data-translate="earthquake-frequency">Earthquakes are natural events that occur around the world every day — many too small to notice. However, large earthquakes can result in tragic loss of life and damage to homes, schools, hospitals, and infrastructure. That's why it's so important to understand what earthquakes are and how we can stay prepared.</p>
+                <p data-translate="earthquake-measurement">One of the key ways we measure earthquakes is with a tool called a seismograph, and the energy release is recorded on a scale called the Richter Scale or more modernly, the Moment Magnitude Scale. The bigger the number, the stronger the earthquake.</p>
+            </div>
+        </section>
+
+        <section id="how-earthquakes-occur" class="earthquake-section">
+            <div class="content-wrapper">
+                <div class="right-content">
+                    <h2 data-translate="how-earthquakes-occur">How do Earthquakes Occur?</h2>
+                    <p data-translate="earthquake-intro">To understand how earthquakes happen, we need to look beneath our feet.</p>
+                    <p data-translate="tectonic-plates">The surface of the Earth is not one solid piece — it is made up of massive slabs of rock called tectonic plates. These plates slowly move, like puzzle pieces floating on a sea of molten rock. They may:</p>
+                    <ul>
+                        <li data-translate="convergent-boundary">Push into each other (convergent boundary)</li>
+                        <li data-translate="transform-boundary">Slide past one another (transform boundary)</li>
+                        <li data-translate="divergent-boundary">Pull apart from each other (divergent boundary)</li>
+                    </ul>
+                    <div class="image-container">
+                        <img src="Assets/Structure-of-earth.jpg" alt="Earth's Layers" class="earth-layers">
+                    </div>
+                    <p data-translate="earthquake-mechanism">Over time, stress builds up along the edges of these plates, especially where they grind or push against one another. Eventually, this pressure becomes too much. When the rock finally breaks or slips, it releases a sudden burst of energy. That energy travels in waves through the ground — and that's what we feel as an earthquake.</p>
+                    <div class="image-container">
+                        <img src="Assets/Sesmic.jpg" alt="Seismic Waves" class="seismic-waves">
+                    </div>
+                    <p data-translate="focus-epicenter">The place where the break starts, deep under the Earth, is called the focus (or hypocenter), and the point directly above it on the surface is called the epicenter. The closer you are to the epicenter, the stronger the shaking usually feels.</p>
+                    <p data-translate="san-andreas">In many places, this plate movement is constant. For example, California lies along the San Andreas Fault, one of the most famous transform boundaries where two plates slide past each other, frequently causing earthquakes.</p>
+                    <p data-translate="other-causes">Sometimes, earthquakes can also be triggered by volcanic activity, the collapse of large underground caves, or even human activities like mining and reservoir construction.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="resources-section">
+            <h2 data-translate="helpful-resources">Helpful Resources to Learn More</h2>
+            <div class="resources-list">
+                <ul>
+                    <li><a href="https://www.usgs.gov/natural-hazards/earthquake-hazards/science/science-earthquakes" target="_blank" data-translate="usgs-link">USGS Earthquake Science</a></li>
+                    <li><a href="https://www.ready.gov/earthquakes" target="_blank" data-translate="ready-gov-link">Ready.gov Earthquake Information</a></li>
+                    <li><a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/earthquake.html" target="_blank" data-translate="redcross-link">Red Cross Earthquake Safety</a></li>
+                    <li><a href="https://www.fema.gov/emergency-managers/risk-management/earthquake" target="_blank" data-translate="fema-link">FEMA Earthquake Resources</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

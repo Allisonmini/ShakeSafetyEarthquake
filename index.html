@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shake Safety - Earthquake Awareness</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Padauk&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><span class="shake">Shake</span> Safety</div>
+            <ul class="nav-links">
+                <li><a href="#about" data-translate="about">About</a></li>
+                <li class="dropdown">
+                    <a href="menu.html" data-translate="menu">Menu</a>
+                    <ul class="dropdown-content">
+                        <li><a href="what-is-earthquake.html" data-translate="what-is-earthquake">What is an Earthquake?</a></li>
+                        <li><a href="types-of-earthquakes.html" data-translate="types-of-earthquakes">Types of Earthquakes</a></li>
+                        <li><a href="history-of-earthquakes.html" data-translate="history">History of Major Earthquakes</a></li>
+                        <li><a href="#community" data-translate="safety-tips">Safety Tips & Preparations</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#preparations" data-translate="preparations">Preparations</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#before" data-translate="before">Before</a></li>
+                        <li><a href="#during" data-translate="during">During</a></li>
+                        <li><a href="#after" data-translate="after">After</a></li>
+                    </ul>
+                </li>
+                <li><a href="#shake-finder" data-translate="shake-finder">Shake Finder</a></li>
+                <li class="language-selector">
+                    <div class="language-tabs">
+                        <button class="lang-tab active" onclick="changeLanguage('en')">English</button>
+                        <button class="lang-tab" onclick="changeLanguage('my')">မြန်မာ</button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 class="title-ss" data-translate="hero-title">Shake Safety</h1>
+            <p data-translate="hero-description">Your trusted source for learning how to stay safe before, during, and after an earthquake. Earthquakes can strike without warning, causing severe damage and loss of life. But with the right knowledge and preparation, you can reduce the risks and protect yourself and your loved ones. This site provides essential information, safety tips, emergency plans, and recovery resources to help individuals and communities become more resilient. Start learning today because safety begins with awareness.</p>
+            <button class="get-started-btn" data-translate="get-started">Get Started</button>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2 data-translate="about-title">About Us</h2>
+            <div class="about-content">
+                <p data-translate="about-content">We are dedicated to providing comprehensive earthquake safety information and resources to help communities prepare for and respond to seismic events.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
