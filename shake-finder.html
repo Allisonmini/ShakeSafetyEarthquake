@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shake Safety - Shake Finder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="shake-finder.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Padauk&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="translations.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><span class="shake">Shake</span> Safety</div>
+            <ul class="nav-links">
+                <li><a href="index.html" data-translate="home">Home</a></li>
+                <li class="dropdown">
+                    <a href="menu.html" data-translate="menu">Menu</a>
+                    <ul class="dropdown-content">
+                        <li><a href="what-is-earthquake.html" data-translate="what-is-earthquake">What is an Earthquake?</a></li>
+                        <li><a href="types-of-earthquakes.html" data-translate="types-of-earthquakes">Types of Earthquakes</a></li>
+                        <li><a href="history-of-earthquakes.html" data-translate="history">History of Major Earthquakes</a></li>
+                    </ul>
+                </li>
+                <li><a href="preparations.html" data-translate="preparations">Preparations</a></li>
+                <li><a href="shake-finder.html" class="active" data-translate="shake-finder">Shake Finder</a></li>
+                <li class="language-selector">
+                    <div class="language-tabs">
+                        <button class="lang-tab active" onclick="changeLanguage('en')">English</button>
+                        <button class="lang-tab" onclick="changeLanguage('my')">မြန်မာ</button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="shake-finder-content">
+        <div class="location-selector">
+            <h1 data-translate="shake-finder-title">Shake Finder</h1>
+            <p data-translate="shake-finder-desc">Find real-time earthquakes near your location</p>
+            <div class="search-box">
+                <input type="text" id="location-input" data-translate-placeholder="location-placeholder" placeholder="Enter your location or use current location">
+                <button id="current-location-btn" data-translate="use-current-location">Use Current Location</button>
+            </div>
+        </div>
+
+        <div class="map-container">
+            <div id="earthquake-map"></div>
+        </div>
+
+        <div class="earthquake-list">
+            <h2 data-translate="recent-earthquakes">Recent Earthquakes</h2>
+            <div class="filters">
+                <select id="magnitude-filter">
+                    <option value="all" data-translate="all-magnitudes">All Magnitudes</option>
+                    <option value="4" data-translate="magnitude-4-plus">4.0+</option>
+                    <option value="5" data-translate="magnitude-5-plus">5.0+</option>
+                    <option value="6" data-translate="magnitude-6-plus">6.0+</option>
+                </select>
+                <select id="time-filter">
+                    <option value="hour" data-translate="last-hour">Last Hour</option>
+                    <option value="day" data-translate="last-24-hours">Last 24 Hours</option>
+                    <option value="week" data-translate="last-7-days">Last 7 Days</option>
+                    <option value="month" data-translate="last-30-days">Last 30 Days</option>
+                </select>
+            </div>
+            <div id="earthquake-list-container"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SOS. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="translations.js"></script>
+    <script src="shake-finder.js"></script>
+</body>
+</html> 

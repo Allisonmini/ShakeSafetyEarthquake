@@ -1,0 +1,180 @@
+.shake-finder-content {
+    padding: 6rem 2rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background-color: #000000;
+}
+
+.location-selector {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.location-selector h1 {
+    color: #b20101;
+    font-family: 'Jaro', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    letter-spacing: 8px;
+}
+
+.location-selector p {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.search-box {
+    display: flex;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#location-input {
+    flex: 1;
+    padding: 1rem;
+    border: 2px solid #b20101;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+#current-location-btn {
+    padding: 1rem 2rem;
+    background-color: #b20101;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#current-location-btn:hover {
+    background-color: #8b0000;
+}
+
+.map-container {
+    height: 400px;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#earthquake-map {
+    height: 100%;
+    width: 100%;
+}
+
+.earthquake-list {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.earthquake-list h2 {
+    color: #b20101;
+    font-family: 'Jaro', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 4px;
+}
+
+.filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.filters select {
+    padding: 0.5rem 1rem;
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #b20101;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#earthquake-list-container {
+    display: grid;
+    gap: 1rem;
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 1rem;
+}
+
+.earthquake-item {
+    background-color: #000000;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.earthquake-item:hover {
+    transform: translateX(10px);
+}
+
+.earthquake-info {
+    flex: 1;
+}
+
+.earthquake-magnitude {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #b20101;
+}
+
+.earthquake-location {
+    color: #ffffff;
+    margin: 0.5rem 0;
+}
+
+.earthquake-time {
+    color: #808080;
+    font-size: 0.9rem;
+}
+
+.earthquake-distance {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Burmese language styles */
+html[lang="my"] .location-selector h1,
+html[lang="my"] .earthquake-list h2 {
+    letter-spacing: normal;
+    font-family: 'Padauk', sans-serif;
+}
+
+html[lang="my"] .earthquake-item {
+    font-family: 'Padauk', sans-serif;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .search-box {
+        flex-direction: column;
+    }
+
+    .filters {
+        flex-direction: column;
+    }
+
+    .location-selector h1 {
+        font-size: 2rem;
+        letter-spacing: 4px;
+    }
+
+    .earthquake-list h2 {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+} 
