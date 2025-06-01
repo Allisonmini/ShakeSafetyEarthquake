@@ -40,6 +40,12 @@ body {
     margin-bottom: 2rem;
 }
 
+[lang="my"] .title-ss {
+    letter-spacing: normal;
+    font-family: 'Padauk', sans-serif;
+    font-weight: bold;
+}
+
 .nav-links {
     display: flex;
     list-style: none;
@@ -371,6 +377,7 @@ html[lang="my"] .hero h1 {
     font-family: 'Padauk', sans-serif;
 }
 
+
 /* Types of Earthquakes Page Styles */
 .boundary-image, .volcanic-image, .induced-image, .waves-image {
     max-width: 100%;
@@ -460,3 +467,341 @@ html[lang="my"] .hero h1 {
 html[lang="my"] .right-content h3 {
     letter-spacing: normal;
 } 
+
+#preparations::before {
+    background-image: url('Assets/Orange and Green Illustrative Disaster Awareness Presentation.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.preparation-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.nav-box {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.nav-box:hover {
+    transform: translateY(-10px);
+}
+
+.nav-box.red {
+    background-color: #b20101;
+    color: white;
+}
+
+.nav-box.white {
+    background-color: white;
+    color: #b20101;
+}
+
+.nav-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Jaro', sans-serif;
+}
+
+.nav-box p {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.nav-box #du {
+    color: #b20101;
+}
+
+@media (max-width: 768px) {
+    .preparation-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .nav-box {
+        width: 100%;
+        max-width: 300px;
+        height: 150px;
+    }
+}
+
+.preparation-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#before .image-container,
+#during .image-container,
+#after .image-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/* Preparations Page Styles */
+.preparations-content {
+    padding: 6rem 2rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #000000;
+    min-height: 100vh;
+    position: relative;
+}
+
+.preparations-content::before {
+    content: '';
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    height: 600px;
+    background-image: url('Assets/Orange and Green Illustrative Disaster Awareness Presentation.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.preparations-content h1,
+.preparations-content .intro,
+.preparation-nav {
+    position: relative;
+    z-index: 1;
+}
+
+.preparations-content h1 {
+    color: #b20101;
+    font-family: 'Jaro', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    letter-spacing: 8px;
+}
+
+.preparations-content .intro {
+    color: #ffffff;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.preparation-sections {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+}
+
+.preparation-sections .section {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.preparation-sections .section:hover {
+    transform: translateY(-10px);
+}
+
+.preparation-sections .section img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+}
+
+.preparation-sections .section h2 {
+    color: #b20101;
+    font-family: 'Jaro', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    letter-spacing: 4px;
+}
+
+.preparation-sections .section p {
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+.preparation-sections .section .nav-box {
+    display: inline-block;
+    background-color: #b20101;
+    color: #ffffff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.preparation-sections .section .nav-box:hover {
+    background-color: #8b0000;
+}
+
+.preparation-details {
+    margin-bottom: 4rem;
+    padding: 2rem;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+}
+
+.preparation-details h2 {
+    color: #b20101;
+    font-family: 'Jaro', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    letter-spacing: 6px;
+}
+
+#before {
+    background-color: #1a1a1a;
+    transform: scale(1.02);
+    z-index: 2;
+}
+
+
+
+.preparation-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.preparation-card h3 {
+    color: #b20101;
+    font-family: 'Jaro', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.preparation-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.preparation-card ul li {
+    color: #000000;
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.preparation-card ul li::before {
+    content: "•";
+    color: #b20101;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.resources {
+    padding: 4rem 2rem;
+    background-color: #1a1a1a;
+    position: relative;
+}
+
+.resources h2 {
+    color: #b20101;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-family: 'Jaro', sans-serif;
+    letter-spacing: 8px;
+}
+
+.resource-links {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.resource-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    display: block;
+    padding: 1rem;
+    background-color: rgba(178, 1, 1, 0.1);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.resource-links a:hover {
+    color: #b20101;
+    background-color: rgba(178, 1, 1, 0.2);
+}
+
+@media (max-width: 768px) {
+    .preparation-sections {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .preparation-sections .section {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .preparations-content h1 {
+        font-size: 2.5rem;
+        letter-spacing: 4px;
+    }
+    
+    .preparation-details h2 {
+        font-size: 2rem;
+        letter-spacing: 3px;
+    }
+}
+
+[lang="my"] .nav-box h3 {
+    font-family: 'Padauk', sans-serif;
+    font-size: 1.3rem;
+    min-height: 2.5rem;
+    letter-spacing: normal;
+}
+
+/* All Burmese-specific preparations page heading styles and related commented-out blocks have been removed to restore default heading styles. */
+
+/* Footer Styles */
+footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
