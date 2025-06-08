@@ -60,12 +60,13 @@ body {
 }
 
 .nav-links a:hover {
-    color:  #b20101;
+    color: #b20101;
 }
 
 /* Dropdown Menu */
 .dropdown {
     position: relative;
+    text-decoration: none;
 }
 
 .dropdown-content {
@@ -75,10 +76,15 @@ body {
     min-width: 200px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     z-index: 1;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
 }
 
 .dropdown-content li {
     padding: 0.5rem 1rem;
+    text-decoration: none;
+    list-style: none;
 }
 
 .dropdown:hover .dropdown-content {
@@ -804,4 +810,179 @@ footer {
 footer p {
     margin: 0;
     font-size: 1rem;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: #1a1a1a;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+        background-color: #2a2a2a;
+        width: 100%;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: #ffffff;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .language-selector {
+        margin-left: 1rem;
+    }
+
+    .language-tabs {
+        gap: 0.5rem;
+    }
+
+    .lang-tab {
+        padding: 0.3rem 0.5rem;
+        font-size: 1rem;
+    }
+
+    /* Hero Section Mobile */
+    .hero {
+        padding: 0 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        letter-spacing: 0.5px;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .get-started-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    /* Content Sections Mobile */
+    .content-wrapper {
+        padding: 0 1rem;
+    }
+
+    .earthquake-section h2 {
+        font-size: 2rem;
+        letter-spacing: 4px;
+    }
+
+    .earthquake-section p {
+        font-size: 1rem;
+    }
+
+    .right-content {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
+    /* Resources Section Mobile */
+    .resources-section {
+        padding: 2rem 1rem;
+    }
+
+    .resources-list a {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+
+    /* Footer Mobile */
+    footer {
+        padding: 1rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .earthquake-section h2 {
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+    }
+
+    .nav-box {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .preparation-sections .section {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .preparation-sections .section h2 {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: #1a1a1a;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .dropdown-content {
+        position: static;
+        box-shadow: none;
+        background-color: #2a2a2a;
+        width: 100%;
+    }
 }
