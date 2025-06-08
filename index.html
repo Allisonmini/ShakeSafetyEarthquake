@@ -11,6 +11,7 @@
     <header>
         <nav class="navbar">
             <div class="logo"><span class="shake">Shake</span> Safety</div>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
             <ul class="nav-links">
                 <li><a href="#about" data-translate="about">About</a></li>
                 <li class="dropdown">
@@ -54,5 +55,21 @@
 
     <script src="translations.js"></script>
     <script src="script.js"></script>
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.navbar')) {
+                navLinks.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html> 
